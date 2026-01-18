@@ -24,7 +24,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }: CarouselProps) => {
     setCurrentIndex(Math.max(newIndex, 0));
   };
 
-  const offset = currentIndex * itemWidth;
+  const offset = currentIndex * itemWidth + currentIndex * 10;
 
   return (
     <div className="Carousel">

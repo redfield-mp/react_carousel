@@ -1,12 +1,18 @@
 // style go here
 .Carousel {
-  width: 390px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 410px;
   overflow: hidden;
 }
 
 .Carousel__list {
   display: flex;
   padding-left: 0;
+  gap: 10px;
+
+  list-style: none;
 
   transition: transform 0.3s ease-in-out;
 }
