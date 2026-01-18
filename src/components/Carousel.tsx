@@ -6,8 +6,8 @@ interface CarouselProps {
   step?: number;
   frameSize?: number;
   itemWidth?: number;
-  animationDuration: number;
-  infinite: boolean;
+  animationDuration?: number;
+  infinite?: boolean;
 }
 
 const Carousel: React.FC<CarouselProps> = ({
@@ -15,7 +15,7 @@ const Carousel: React.FC<CarouselProps> = ({
   step = 3,
   frameSize = 3,
   itemWidth = 130,
-  animationDuration,
+  animationDuration = 1000,
 }) => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
   const maxIndex = images.length - frameSize;
